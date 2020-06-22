@@ -52,13 +52,9 @@ public class PatientCrudRestController {
 		
 		PatientDetailWrapper patientDetail=new PatientDetailWrapper();
 		try {
-
-			
-			/*
-			 * FirebaseToken decodedToken =
-			 * FirebaseAuth.getInstance().verifyIdTokenAsync(idToken).get();
-			 * System.out.println("decodedToken:"+decodedToken);
-			 */
+			  FirebaseToken decodedToken =
+			  FirebaseAuth.getInstance().verifyIdTokenAsync(idToken).get();
+			  System.out.println("decodedToken:"+decodedToken);
 			 
 		}
 		catch(Exception e) {
